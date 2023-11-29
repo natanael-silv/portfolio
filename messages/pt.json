@@ -1,0 +1,36 @@
+{
+  "Index": {
+    "title": "Olá 👋 sou o Natanael, ",
+    "description": "um desenvolvedor front-end com paixão por diversas tecnologias. Crio interfaces de usuário modernas e de alta qualidade, enfatizando desempenho, animações, responsividade e SEO (Otimização para Motores de Busca).",
+    "actions": {
+      "download": "Baixar CV",
+      "hire": "Contrate-me"
+    },
+    "Projects": {
+      "title": "Projetos",
+      "moviesApp": {
+        "title": "App de Filmes",
+        "description": "Um site criado para você encontrar informações sobre todos os filmes que deseja"
+      },
+      "shoppingCart": {
+        "title": "Carrinho de Compras",
+        "description": "Um design web interativo para um carrinho de compras"
+      },
+      "oceandex": {
+        "title": "Oceandex",
+        "description": "Um site sobre o oceano e sua vida marinha"
+      },
+      "link": "Veja mais no GitHub"
+    },
+    "Skills": "Habilidades"
+  },
+  "Navigation": {
+    "about": "Sobre",
+    "blog": "Blog",
+    "contact": "Entre em contato"
+  },
+  "Footer": {
+    "copyright": "© Copyright Natanael 2023. Todos os direitos reservados.",
+    "links": "Minhas Redes:"
+  }
+}
