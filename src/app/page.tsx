@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 //import { useTheme } from "next-themes";
-import { Fade, Bounce } from "react-awesome-reveal";
+import { Fade } from "react-awesome-reveal";
 import NextLogo from "/public/svgs/next.svg";
 import NodeLogo from "/public/svgs/node.svg";
 import ReactLogo from "/public/svgs/react.svg";
@@ -13,12 +13,13 @@ import TypescriptSvg from "/public/svgs/ts.svg";
 import JavaScriptSvg from "/public/svgs/javascript.svg";
 import DownloadSvg from "public/svgs/DownloadSimple.svg";
 import ProjectsCard from "./components/ProjectsCard";
+import Link from "next/link";
 
 export default async function Home() {
   return (
     <>
       <main className=" md:text-xl">
-        <Fade direction="left" triggerOnce >
+        <Fade triggerOnce>
           <section className="w-full mb-28 flex flex-col min-[875px]:flex-row items-center">
             <div className="mb-4 p-5 rounded-full bg-[#ffff] dark:bg-[#ffff] md:mr-6 transition duration-500 ease-in-out">
               <Image
@@ -58,30 +59,40 @@ export default async function Home() {
             </div>
           </section>
         </Fade>
-        <Fade direction="down" triggerOnce>
-          <section className="w-full mb-28">
-            <h2 className="font-bold text-[#3c3c43] dark:text-white bg:text-white mb-8">
-              Projects
-            </h2>
-            <div className="grid md:grid-cols-3 justify-center gap-4">
+
+        <section className="w-full mb-28">
+          <h2 className="font-bold text-[#3c3c43] dark:text-white bg:text-white mb-8">
+            Projects
+          </h2>
+          <div className="grid md:grid-cols-3 justify-center gap-4 mb-8 ">
+            <Fade triggerOnce cascade>
               <ProjectsCard
-                title="To do List"
-                description="Add your thoughts and never forget again"
-                src="/"
+                title="Movies App"
+                description="A website created for you to find information about all the movies you want"
+                src="https://movies-app-eta-navy.vercel.app/"
+                imageSrc="/images/movies-app.png"
               />
               <ProjectsCard
-                title="To do List"
-                description="Add your thoughts and never forget again"
-                src="/"
+                title="Shopping Cart"
+                description="An interactive web design for a shopping cart"
+                src="https://peaceful-pony-210aed.netlify.app/"
+                imageSrc="/images/shopping-cart.png"
               />
               <ProjectsCard
-                title="To do List"
-                description="Add your thoughts and never forget again"
-                src="/"
+                title="Oceandex"
+                description="A website about the ocean and its life"
+                src="https://www.oceandex.com.br/"
+                imageSrc="/images/oceandex-bg.png"
               />
-            </div>
-          </section>
-        </Fade>
+            </Fade>
+          </div>
+          <Link
+            className="font-normal text-white underline flex w-full items-center justify-center"
+            href="https://github.com/natanael-silv"
+          >
+            See more on github
+          </Link>
+        </section>
 
         <section className="w-full mb-28">
           <h2 className="font-bold text-[#3c3c43] dark:text-white bg:text-white mb-8">
