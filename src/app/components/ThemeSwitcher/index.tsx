@@ -7,18 +7,10 @@ import Sun from "/public/svgs/sun.svg";
 
 export const ThemeSwitcher = () => {
   const { theme, setTheme } = useTheme();
-  const [mounted, setMounted] = useState(false);
-
-  useEffect(() => {
-    setMounted(true);
-  }, []);
-
-  if (!mounted) {
-    return null;
-  }
 
   const handleButtonClick = () => {
-    setTheme(theme === "dark" ? "light" : "dark");
+    console.log("clicked");
+    setTheme(theme === "Light" ? "dark" : "Light");
   };
   return (
     <button
@@ -26,10 +18,10 @@ export const ThemeSwitcher = () => {
       className="flex items-center justify-center "
       title="Toggles light & dark transition"
     >
-      {theme === "dark" ? (
-        <Moon className="hover:fill-white fill-[#939393]" />
+      {theme === "Light" ? (
+        <Moon className="hover:fill-[#3c3c43] fill-[#939393]" />
       ) : (
-        <Sun className="hover:fill-[#3c3c43] fill-[#737373]" />
+        <Sun className=" hover:fill-white fill-[#737373]" />
       )}
     </button>
   );
